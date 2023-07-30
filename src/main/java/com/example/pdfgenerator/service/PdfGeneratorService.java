@@ -20,7 +20,7 @@ public class PdfGeneratorService {
         try {
             PdfWriter.getInstance(document, out);
             document.open();
-            document.add(new Paragraph("Hello World"));
+            document.add(new Paragraph("Hello World - PDF criado com Spring Boot e Java - Endpoint criado para retornar o pdf"));
             document.close();
         } catch (DocumentException e) {
             e.printStackTrace();
